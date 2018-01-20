@@ -1,0 +1,179 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'normalize';
+
+.drop-button-box {
+  background: url(../images/bottom_01.jpg) no-repeat top center;
+  height: 390px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding-top: 53px;
+}
+
+.drop {   
+  animation: dropdown 1.2s ease-in infinite;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-56%);
+  top: 276px;
+  background: url(../images/g3_23.png) no-repeat;
+  background-size: cover;
+}
+
+.button_phone {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  margin-left: -23px;
+  text-align: center;
+  font: bold 24px/24px "Microsoft YaHei UI";
+  color: #6284f0;
+}
+
+.ripple-small {
+  width: 46px;
+  height: 46px;
+  border: solid 1px #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -23px;
+  animation: guangyun 2.4s linear infinite;
+  animation-delay: 1.2s;
+}
+
+.ripple-big {
+  width: 46px;
+  height: 46px;
+  border: solid 1px #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -23px;
+  animation: guangyun 2.4s linear infinite;
+  animation-delay: 2.4s;
+}
+
+
+@-webkit-keyframes dropdown {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    top: 276px;
+  }
+  100% {
+    top: 311px;
+  }
+}
+
+@-moz-keyframes dropdown {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    top: 276px;
+  }
+  100% {
+    top: 311px;
+  }
+}
+
+@-ms-keyframes dropdown {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    top: 276px;
+  }
+  100% {
+    top: 311px;
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    top: 276px;
+  }
+  100% {
+    top: 311px;
+  }
+}
+
+@-webkit-keyframes guangyun {
+  0% {
+    border: solid 1px #6284f0;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    top: -17px;
+    border-color: rgba(98, 132, 240, 0.1);
+  }
+}
+
+@-moz-keyframes guangyun {
+  0% {
+    border: solid 1px #6284f0;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    top: -17px;
+    border-color: rgba(98, 132, 240, 0.1);
+  }
+}
+
+@-ms-keyframes guangyun {
+  0% {
+    border: solid 1px #6284f0;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    top: -17px;
+    border-color: rgba(98, 132, 240, 0.1);
+  }
+}
+
+@keyframes guangyun {
+  0% {
+    border: solid 1px #6284f0;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    top: -17px;
+    border-color: rgba(98, 132, 240, 0.1);
+  }
+}
